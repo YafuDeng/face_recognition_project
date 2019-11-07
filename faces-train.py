@@ -23,7 +23,7 @@ x_train = []
 
 for root, dir, files in os.walk(image_dir):
     for file in files:
-        if file.endswith("jpg") or file.endswith("png"):
+        if file.endswith("jpg") or file.endswith("png") or file.endswith("jpeg"):
             path = os.path.join(root, file)
             label = os.path.basename(os.path.dirname(path)).replace(" ", "-").lower()
             #print(label, path)

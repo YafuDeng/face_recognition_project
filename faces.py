@@ -44,7 +44,7 @@ while(True):
         # can be modified to do better
         # conf value needs some research
         id_, conf = recognizer.predict(roi_gray)
-        if conf>= 45 and conf <=85:
+        if conf>= 70:
             print(id_)
             print(labels[id_])
             font = cv2.FONT_HERSHEY_SIMPLEX
